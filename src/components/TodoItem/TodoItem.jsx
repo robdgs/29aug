@@ -1,6 +1,6 @@
 import "./index.css";
 
-const TodoItem = ({ todo,onHandleDelete }) => {
+const TodoItem = ({ todo }) => {
   console.log("Render Component Item");
   return (
     <div className="TodoItem">
