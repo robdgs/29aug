@@ -14,30 +14,30 @@ button {
   border: 0;
   border-bottom: 1px solid rgb(215, 215, 215);
   color: rgb(2, 1, 2);
- 
 }
-.TodoList__Clear{
+.TodoList__Clear {
   background-color: brown;
   color: white;
   cursor: pointer;
 }
-.TodoList input{
+.TodoList__delete {
+  background-color: aqua;
+}
+.TodoList input {
   outline: none;
-background-color: transparent;
+  background-color: transparent;
 }
 
 .TodoList__Add {
-  background-color:darkolivegreen;
+  background-color: darkolivegreen;
   color: white;
   cursor: pointer;
 }
 
-
 .TodoList button:active {
   background-color: rgba(85, 107, 47, 0.689);
-  
 }
 .toDoItem {
   max-height: 8rem;
-  overflow-y:scroll;
+  overflow-y: scroll;
 }

@@ -11,13 +11,13 @@ const TodoList = ({ list, setList }) => {
     setTodoInput("");
   };
 
-  const removeTask = (i) => {
+  // clear all tasks
+
+  const clearTask = (i) => {
     const newItem = [...list];
     newItem.splice(i);
     setList(newItem);
   };
-
-  const cancelTask = () => removeTask();
 
   return (
     <div className="TodoList">
@@ -27,8 +27,10 @@ const TodoList = ({ list, setList }) => {
         onChange={(e) => setTodoInput(e.target.value)}
         placeholder="Cosa vuoi ricordarti oggi?"
       />
-      <button className="TodoList__Add" onClick={onHandleClick}>Add</button>
-      <button className="TodoList__Clear" onClick={cancelTask}>
+      <button className="TodoList__Add" onClick={onHandleClick}>
+        Add
+      </button>
+      <button className="TodoList__Clear" onClick={clearTask}>
         Clear List
       </button>
       <div className="toDoItem">
