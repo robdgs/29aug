@@ -1,0 +1,8 @@
+.TodoItem {
+  font-size: 1rem;
+  padding: 0.25rem 1rem;
+  line-height: 1rem;
+display: flex;
+justify-content: space-between;
+}
+

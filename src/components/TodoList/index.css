@@ -1,0 +1,43 @@
+.TodoList {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+
+.TodoList input,
+button {
+  padding: 8px 12px;
+  font-weight: bold;
+  background-color: transparent;
+  border: 0;
+  border-bottom: 1px solid rgb(215, 215, 215);
+  color: rgb(2, 1, 2);
+ 
+}
+.TodoList__Clear{
+  background-color: brown;
+  color: white;
+  cursor: pointer;
+}
+.TodoList input{
+  outline: none;
+background-color: transparent;
+}
+
+.TodoList__Add {
+  background-color:darkolivegreen;
+  color: white;
+  cursor: pointer;
+}
+
+
+.TodoList button:active {
+  background-color: rgba(85, 107, 47, 0.689);
+  
+}
+.toDoItem {
+  max-height: 8rem;
+  overflow-y:scroll;
+}
